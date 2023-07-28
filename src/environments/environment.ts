@@ -4,20 +4,20 @@
 
 export const environment = {
   production: false,
-  defaultauth: 'fackbackend',
+  defaultauth: "fackbackend",
+  firebaseRealtimeDatabaseURL:
+    "https://sakoon-70715-default-rtdb.asia-southeast1.firebasedatabase.app",
   firebaseConfig: {
-    apiKey: '',
-    authDomain: '',
-    databaseURL: '',
-    projectId: '',
-    storageBucket: '',
-    messagingSenderId: '',
-    appId: '',
-    measurementId: ''
-  }
+    apiKey: "",
+    authDomain: "",
+    databaseURL: "",
+    projectId: "",
+    storageBucket: "",
+    messagingSenderId: "",
+    appId: "",
+    measurementId: "",
+  },
 };
-
-
 
 /*
  * For easier debugging in development mode, you can import the following file
