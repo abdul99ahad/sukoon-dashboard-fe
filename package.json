@@ -30,6 +30,8 @@
     "@nicky-lenaers/ngx-scroll-to": "^9.0.0",
     "@types/chartist": "^0.11.0",
     "angular-archwizard": "^7.0.0",
+    "angular-fusioncharts": "^4.0.3",
+    "angular-gauge-chart": "^0.7.2",
     "bootstrap": "^5.2.3",
     "bs-custom-file-input": "^1.3.4",
     "firebase": "^10.1.0",

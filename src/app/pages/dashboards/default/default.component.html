@@ -20,7 +20,7 @@
   <div class="row">
     <div class="col-xl-12">
       <div class="card overflow-hidden">
-        <div class="bg-primary bg-soft">
+        <!-- <div class="bg-primary bg-soft">
           <div class="row">
             <div class="col-7">
               <div class="text-primary p-3">
@@ -36,7 +36,7 @@
               />
             </div>
           </div>
-        </div>
+        </div> -->
         <div class="card-body pt-0">
           <div class="row">
             <!-- <div class="col-sm-4">
@@ -51,19 +51,33 @@
               <p class="text-muted mb-0 text-truncate">UI/UX Designer</p>
             </div> -->
 
+            <!-- <fusioncharts
+              type="angulargauge"
+              width="450"
+              height="250"
+              dataFormat="json"
+              [dataSource]="dataSource"
+            ></fusioncharts> -->
+
             <div class="col-sm-12">
               <div class="pt-4">
                 <div class="row">
-                  <div class="col-2" *ngFor="let sensorData of sensorDataArray">
-                    <h5 class="font-size-15">{{ sensorData.value }}</h5>
-                    <p class="text-muted mb-0">{{ sensorData.key }}</p>
+                  <div class="col-4" *ngFor="let sensorData of sensorDataArray">
+                    <rg-gauge-chart
+                      [canvasWidth]="canvasWidth"
+                      [needleValue]="sensorData.adjustedValue"
+                      [centralLabel]="centralLabel"
+                      [options]="sensorData.options"
+                      [name]="sensorData.key"
+                      [bottomLabel]="sensorData.value"
+                    ></rg-gauge-chart>
                   </div>
                 </div>
-                <div class="mt-4">
+                <!-- <div class="mt-4">
                   <a href="" class="btn btn-primary btn-sm"
                     >View Profile <i class="mdi mdi-arrow-right ms-1"></i
                   ></a>
-                </div>
+                </div> -->
               </div>
             </div>
           </div>

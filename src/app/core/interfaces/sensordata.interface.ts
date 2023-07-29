@@ -3,6 +3,6 @@ export interface SensorData {
   Energy: number;
   Frequency: number;
   Power: number;
-  Powerfactor: number;
+  PowerFactor: number;
   Voltage: number;
 }
